@@ -2,7 +2,7 @@ Feature: Mark Movie as Favorite (Indonesian)
   Background:
     Given I have changed language to Indonesian
 
-  Scenario 1: Attempt to mark a movie as favorite without logging in
+  Scenario 1: Failed to mark movie as favorite without logging in.
       Given I am on the TMDb homepage
       And I am not logged in
       When I click the button to mark a movie as favorite
@@ -25,7 +25,7 @@ Feature: Mark Movie as Favorite (Indonesian)
       | My Favorite  |
       | Inside Out 2 |
 
-  Scenario 3: Add multiple movies to favorites
+  Scenario 3: Successfully add multiple movies to favorites
       Given I am logged in to my TMDb account
       When I mark "Movie A" as favorite
       And I mark "Movie B" as favorite
