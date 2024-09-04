@@ -11,9 +11,20 @@
 | TCI006 | Sort favorite movies list | Example:  It Ends With Us, Inside Out 2, A Quiet Place Day 1(Movies) | **Given** I am logged in to my TMDb account, **And** I have multiple movies in my "Favorite Movies" list, **When** I go to my "Favorite Movies" list, **And** I select a sorting option (e.g., "Title A-Z"), **Then** my favorite movies should be displayed in the selected order | The favorite movies should be sorted according to the selected option (e.g., "Title A-Z") and the sorting order should be consistent and accurate. | **PASS** | mm | |
 | TCI007 | Verify favorite movies persist across sessions | Example: A Quiet Place Day 1, It Ends With Us, Inside Out 2 (Movies) | **Given** I am logged in to my TMDb account, **And** I have marked several movies as favorites, **When** I log out of my account, **And** I log back in,  **Then** my "Favorite Movies" list should still contain all previously favorited movies | The user's favorite movies should remain unchanged after logging out and logging back in and the "Favorite Movies" list should display all previously favorited movies. | **PASS** | mm | |
 
-**Lampiran:**
+## Lampiran:
 Test Case TCI001
 ![alt Test Case TCI001](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci001.png)
+
 Test Case TCI002
 ![alt Test Case TCI002-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-1.png)
 ![alt Test Case TCI002-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-2.png)
+
+Test Case TCI003
+![alt Test Case TCI003](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci003.png)
+
+Test Case TCI004
+![alt Test Case TCI004](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci004.png)
+
+Test Case TCI005
+![alt Test Case TCI005-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci005-1.png)
+![alt Test Case TCI005-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci005-2.png)
