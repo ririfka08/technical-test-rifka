@@ -10,15 +10,15 @@ Feature: Mark Movie as Favorite
   Scenario 1: Change language to Indonesian
     Given I am on the TMDb homepage
     And I am logged in
-    When I click on the language options
+    When I click on the language options button
     And I select "Bahasa Indonesia"
     Then the interface language should change to Indonesian
-    And I should see "ID" instead of "ENG"
+    And I should see "ID" instead of "EN"
 
   Scenario 2: Attempt to mark a movie as favorite without logging in
     Given I am on the TMDb homepage
     And I am not logged in
-    When I try to mark a movie as favorite
+    When I click the button to mark a movie as favorite
     Then I should see a prompt to log in
     And the movie should not be added to my favorites
 
