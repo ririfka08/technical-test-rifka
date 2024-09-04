@@ -14,6 +14,6 @@
 **Lampiran:**
 Test Case TCI001
 ![alt Test Case TCI001](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci001.png)
-Test Case TCI001
+Test Case TCI002
 ![alt Test Case TCI002-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-1.png)
 ![alt Test Case TCI002-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-2.png)
