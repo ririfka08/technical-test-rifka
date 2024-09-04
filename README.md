@@ -1,5 +1,5 @@
 # TMDb Mark as Favorite - Gherkin Test Cases Scenarios 
-# Feature: Mark Movie as Favorite 
+## Feature: Mark Movie as Favorite 
 User Story: As a logged-in user of TMDb, I want to mark movies as my favorites. So   that I can easily access and manage my list of favorite movies
 
 ```gherkin
@@ -16,6 +16,7 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. A clear and informative prompt should be displayed, indicating that the user needs to log in.
       2. The movie should not be added to the user's favorites list.
+     
 ```
 ![alt Test Scenario 1](https://github.com/ririfka08/technical-test-rifka/blob/main/tc001.png)
 
@@ -29,6 +30,9 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. The "Mark as Favorite" button should change its appearance (e.g., color, icon) to indicate that the movie is favorited.
       2. The movie should appear in the user's "My Favorite" list on their profile.
+  Example: Movie
+      | My Favorite  |
+      | Inside Out 2 |
 
   Scenario 3: Add multiple movies to favorites
       Given I am logged in to my TMDb account
@@ -39,6 +43,11 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. All three movies should be correctly added to the user's favorites list.
       2. The "My Favorite" list should display all three movies.
+  Example: Movie
+      | My Favorite     |
+      | It Ends With Us |
+      | Despicable Me 4 |
+      | Inside Out 2    |
 
   Scenario 4: Remove a movie from favorites from "My Favorite" page
       Given I am logged in to my TMDb account
@@ -63,6 +72,10 @@ Feature: Mark Movie as Favorite (Indonesian)
       1. The movie should be removed from the user's favorites list.
       2. The "Mark as Favorite" button on the movie's page should return to its original state.
       3. The movie should no longer appear in the user's "Favorite Movies" list.
+  Example: Movie
+      | My Favorite     |
+      | It Ends With Us |
+      | Inside Out 2    |
 
   Scenario 6: Sort favorite movies list
       Given I am logged in to my TMDb account
@@ -73,6 +86,11 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. The favorite movies should be sorted according to the selected option (e.g., "Title A-Z").
       2. The sorting order should be consistent and accurate.
+  Example: Movie
+      | My Favorite         |
+      | Inside Out 2        |
+      | It Ends With Us     |
+      | A Quiet Place Day 1 |
 
   Scenario 7: Verify favorite movies persist across sessions
       Given I am logged in to my TMDb account
@@ -83,6 +101,11 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       The user's favorite movies should remain unchanged after logging out and logging back in.
       The "Favorite Movies" list should display all previously favorited movies.
+  Example: Movie
+      | My Favorite         |
+      | A Quiet Place Day 1 |
+      | It Ends With Us     |
+      | Inside Out 2        |
 
 
 
