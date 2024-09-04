@@ -5,7 +5,7 @@ User Story: As a logged-in user of TMDb, I want to mark movies as my favorites. 
 ```gherkin
 Feature: Mark Movie as Favorite 
   Background:
-    Given I have logged in
+    Given I have changed language to Indonesian
 
   Scenario 1: Change language to Indonesian
     Given I am on the TMDb homepage
