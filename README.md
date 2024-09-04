@@ -1,10 +1,11 @@
-# TMDb Mark as Favorite - Gherkin Test Scenarios (MAnual Testing)
-## Feature: Mark Movie as Favorite
+# TMDb Mark as Favorite - Gherkin Test Scenarios (Manual Testing)
+# Feature: Mark Movie as Favorite
+''' gherkin 
 As a logged-in user of TMDb
 I want to mark movies as my favorites
 So that I can easily access and manage my list of favorite movies
 
-Scenario: Change language to Indonesian
+## Scenario 1: Change language to Indonesian
 Given I am on the TMDb homepage
 When I click on the language options
 And I select "Bahasa Indonesia"
