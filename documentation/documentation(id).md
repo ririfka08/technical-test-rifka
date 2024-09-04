@@ -14,27 +14,27 @@ As a logged-in user of TMDb, I want to mark movies as my favorites. So that I ca
 
 
 ## Lampiran:
-Test Case TCI001
+Test Case TCI001 - Failed to mark movie as favorite without logging in.
 ![alt Test Case TCI001](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci001.png)
 
-Test Case TCI002
+Test Case TCI002 - Successfully mark a movie as favorite
 ![alt Test Case TCI002-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-1.png)
 ![alt Test Case TCI002-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci002-2.png)
 
-Test Case TCI003
+Test Case TCI003 - Successfully add multiple movies to favorites
 ![alt Test Case TCI003](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci003.png)
 
-Test Case TCI004
+Test Case TCI004 - Remove a movie from favorites from "My Favorite" page
 ![alt Test Case TCI004](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci004.png)
 
-Test Case TCI005
+Test Case TCI005 - Remove a movie from favorites from movie's details page
 ![alt Test Case TCI005-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci005-1.png)
 ![alt Test Case TCI005-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci005-2.png)
 
-Test Case TCI006
+Test Case TCI006 - Sort favorite movies list
 ![alt Test Case TCI006-1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci006-1.png)
 ![alt Test Case TCI006-2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci006-2.png)
 ![alt Test Case TCI006-3](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci006-3.png)
 
-Test Case TCI007
+Test Case TCI007 - Verify favorite movies persist across sessions
 ![alt Test Case TCI007](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci007.png)
