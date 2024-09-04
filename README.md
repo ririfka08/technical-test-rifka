@@ -4,15 +4,17 @@ As a logged-in user of TMDb
 I want to mark movies as my favorites
 So that I can easily access and manage my list of favorite movies
 
-#    Background:
-      Given I have overdue tasks
+# Background:
+* Given I have overdue tasks
+
 
 ## Scenario 1: Change language to Indonesian
 Given I am on the TMDb homepage
 When I click on the language options
 And I select "Bahasa Indonesia"
 Then the interface language should change to Indonesian
-And I should see "Beranda" instead of "Home"
+And I should see "ID" instead of "ENG"
+
 Scenario: Attempt to mark a movie as favorite without logging in
 Given I am on the TMDb homepage
 And I am not logged in
