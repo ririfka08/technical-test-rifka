@@ -22,34 +22,46 @@ Feature: Mark Movie as Favorite (Indonesian)
       And I am viewing a movie's details page
       When I click the "Mark as Favorite" button
       Then the button should change to indicate the movie is favorited
-      And the movie should appear in my "Favorite Movies" list on my profile
+      And the movie should appear in my "My Favorite" list on my profile
   Acceptance Criteria:
       1. The "Mark as Favorite" button should change its appearance (e.g., color, icon) to indicate that the movie is favorited.
-      2. The movie should appear in the user's "Favorite Movies" list on their profile.
+      2. The movie should appear in the user's "My Favorite" list on their profile.
 
   Scenario 3: Add multiple movies to favorites
       Given I am logged in to my TMDb account
       When I mark "Movie A" as favorite
       And I mark "Movie B" as favorite
       And I mark "Movie C" as favorite
-      Then all three movies should appear in my "Favorite Movies" list on my profile
+      Then all three movies should appear in my "My Favorite" list on my profile
   Acceptance Criteria:
       1. All three movies should be correctly added to the user's favorites list.
-      2. The "Favorite Movies" list should display all three movies.
+      2. The "My Favorite" list should display all three movies.
 
-  Scenario 4: Remove a movie from favorites
+  Scenario 4: Remove a movie from favorites from "My Favorite" page
       Given I am logged in to my TMDb account
-      And I have at least one movie in my "Favorite Movies" list
-      When I go to my "Favorite Movies" list
+      And I have at least one movie in my "My Favorite" list
+      When I go to my "My Favorite" list
       And I click the "Remove from Favorites" button for a specific movie
-      Then the movie should be removed from my "Favorite Movies" list
+      Then the movie should be removed from my "My Favorite" list
       And the "Mark as Favorite" button on that movie's page should reset to its original state
   Acceptance Criteria:
       1. The movie should be removed from the user's favorites list.
       2. The "Mark as Favorite" button on the movie's page should return to its original state.
       3. The movie should no longer appear in the user's "Favorite Movies" list.
 
-  Scenario 5: Sort favorite movies list
+  Scenario 5: Remove a movie from favorites from movie's details page
+      Given I am logged in to my TMDb account
+      And I have at least one movie in my "My Favorite" list
+      When I go to my favorite movie's details page
+      And I click the "Remove from Favorites" button 
+      Then the movie should be removed from my "My Favorite" list
+      And the "Mark as Favorite" button on that movie's page should reset to its original state
+  Acceptance Criteria:
+      1. The movie should be removed from the user's favorites list.
+      2. The "Mark as Favorite" button on the movie's page should return to its original state.
+      3. The movie should no longer appear in the user's "Favorite Movies" list.
+
+  Scenario 6: Sort favorite movies list
       Given I am logged in to my TMDb account
       And I have multiple movies in my "Favorite Movies" list
       When I go to my "Favorite Movies" list
