@@ -16,8 +16,10 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. A clear and informative prompt should be displayed, indicating that the user needs to log in.
       2. The movie should not be added to the user's favorites list.
+```
 ![alt Test Scenario 1](https://github.com/ririfka08/technical-test-rifka/blob/main/tc001.png)
 
+```gherkin
   Scenario 2: Successfully mark a movie as favorite
       Given I am logged in to my TMDb account
       And I am viewing a movie's details page
