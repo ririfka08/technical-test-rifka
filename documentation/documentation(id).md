@@ -7,4 +7,4 @@
 
 
 **Lampiran:**
-![alt Test Case TC020](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tc001.png)
+![alt Test Case TC020](https://github.com/ririfka08/technical-test-rifka/blob/main/images/ind/tci001.png)
