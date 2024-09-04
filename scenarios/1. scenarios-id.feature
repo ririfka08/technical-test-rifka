@@ -4,6 +4,7 @@ Feature: Mark Movie as Favorite (Indonesian)
 
   Scenario 1: Failed to mark movie as favorite without logging in.
       Given I am on the TMDb homepage
+      And I am viewing a movie's details page
       And I am not logged in
       When I click the button to mark a movie as favorite
       Then I should see a prompt to log in
@@ -27,6 +28,7 @@ Feature: Mark Movie as Favorite (Indonesian)
 
   Scenario 3: Successfully add multiple movies to favorites
       Given I am logged in to my TMDb account
+      And I am viewing a movie's details page
       When I mark "Movie A" as favorite
       And I mark "Movie B" as favorite
       And I mark "Movie C" as favorite
@@ -43,7 +45,10 @@ Feature: Mark Movie as Favorite (Indonesian)
   Scenario 4: Remove a movie from favorites from "My Favorite" page
       Given I am logged in to my TMDb account
       And I have at least one movie in my "My Favorite" list
-      When I go to my "My Favorite" list
+      When I click my profile picture
+      And I click Lists
+      And I click Overview
+      And I select Favorites
       And I click the "Remove from Favorites" button for a specific movie
       Then the movie should be removed from my "My Favorite" list
       And the "Mark as Favorite" button on that movie's page should reset to its original state
@@ -71,7 +76,10 @@ Feature: Mark Movie as Favorite (Indonesian)
   Scenario 6: Sort favorite movies list
       Given I am logged in to my TMDb account
       And I have multiple movies in my "Favorite Movies" list
-      When I go to my "Favorite Movies" list
+      When I click my profile picture
+      And I click Lists
+      And I click Overview
+      And I select Favorites
       And I select a sorting option (e.g., "Title A-Z")
       Then my favorite movies should be displayed in the selected order
   Acceptance Criteria:
@@ -88,6 +96,10 @@ Feature: Mark Movie as Favorite (Indonesian)
       And I have marked several movies as favorites
       When I log out of my account
       And I log back in
+      And I click profile's picture
+      And I click Lists
+      And I click Overview
+      And I select Favorites
       Then my "Favorite Movies" list should still contain all previously favorited movies
   Acceptance Criteria:
       The user's favorite movies should remain unchanged after logging out and logging back in.
