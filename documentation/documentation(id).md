@@ -2,12 +2,8 @@
 
 | Test Case ID | Scenario | Data Test | Test Step | Expected Result | Test Status | Actual Result | Notes |
 |---|---|---|
-| TCI001 | Attempt to mark a movie as favorite without logging in |       Given I am on the TMDb homepage
-      And I am not logged in
-      When I click the button to mark a movie as favorite
-      Then I should see a prompt to log in
-      And the movie should not be added to my favorites |  Cell 3 |Cell 6 |
-| TCI002 | Cell 5 | Cell 6 | Cell 6 | Cell 6 |
+| TCI001 | Attempt to mark a movie as favorite without logging in |  m |  Cell 3 | PASS | Cell 6 | Cell 6 |
+| TCI002 | Attempt to mark a movie as favorite without logging in |  m |  Cell 3 | PASS | Cell 6 | Cell 6 |
 
 **Prasyarat:**
 * User telah terdaftar.
