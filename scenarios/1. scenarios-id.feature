@@ -42,13 +42,32 @@ Feature: Mark Movie as Favorite (Indonesian)
       | Despicable Me 4 |
       | Inside Out 2    |
 
-  Scenario 4: Remove a movie from favorites from "My Favorite" page
+  Scenario 4: Successfully view "My Favorite" page
+      Given I am logged in to my TMDb account
+      And II have at least one movie in my "My Favorite" list
+      When I click my profile picture
+      And I click Lists
+      And I click Overview
+      And I select Favorites
+      And I select Movies
+      Then all favorite movies should appear in my "My Favorite" list on my profile
+  Acceptance Criteria:
+      1. All movies should be added to the user's favorites list.
+      2. The "My Favorite" list should display all favorite movies.
+  Example: Movie
+      | My Favorite     |
+      | It Ends With Us |
+      | Despicable Me 4 |
+      | Inside Out 2    |
+
+  Scenario 5: Remove a movie from favorites from "My Favorite" page
       Given I am logged in to my TMDb account
       And I have at least one movie in my "My Favorite" list
       When I click my profile picture
       And I click Lists
       And I click Overview
       And I select Favorites
+      And I select Movies
       And I click the "Remove from Favorites" button for a specific movie
       Then the movie should be removed from my "My Favorite" list
       And the "Mark as Favorite" button on that movie's page should reset to its original state
@@ -57,7 +76,7 @@ Feature: Mark Movie as Favorite (Indonesian)
       2. The "Mark as Favorite" button on the movie's page should return to its original state.
       3. The movie should no longer appear in the user's "Favorite Movies" list.
 
-  Scenario 5: Remove a movie from favorites from movie's details page
+  Scenario 6: Remove a movie from favorites from movie's details page
       Given I am logged in to my TMDb account
       And I have at least one movie in my "My Favorite" list
       When I go to my favorite movie's details page
@@ -73,13 +92,14 @@ Feature: Mark Movie as Favorite (Indonesian)
       | It Ends With Us |
       | Inside Out 2    |
 
-  Scenario 6: Sort favorite movies list
+  Scenario 7: Sort favorite movies list
       Given I am logged in to my TMDb account
       And I have multiple movies in my "Favorite Movies" list
       When I click my profile picture
       And I click Lists
       And I click Overview
       And I select Favorites
+      And I select Movies
       And I select a sorting option (e.g., "Title A-Z")
       Then my favorite movies should be displayed in the selected order
   Acceptance Criteria:
@@ -91,7 +111,7 @@ Feature: Mark Movie as Favorite (Indonesian)
       | It Ends With Us     |
       | A Quiet Place Day 1 |
 
-  Scenario 7: Verify favorite movies persist across sessions
+  Scenario 8: Verify favorite movies persist across sessions
       Given I am logged in to my TMDb account
       And I have marked several movies as favorites
       When I log out of my account
