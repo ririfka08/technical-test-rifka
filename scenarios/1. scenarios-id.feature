@@ -12,6 +12,9 @@ Feature: Mark Movie as Favorite (Indonesian)
   Acceptance Criteria:
       1. A clear and informative prompt should be displayed, indicating that the user needs to log in.
       2. The movie should not be added to the user's favorites list.
+  Example: Movie
+      | Movies       |
+      | Inside Out 2 |
      
   Scenario 2: Successfully mark a movie as favorite
       Given I am logged in to my TMDb account
@@ -74,6 +77,9 @@ Feature: Mark Movie as Favorite (Indonesian)
       1. The movie should be removed from the user's favorites list.
       2. The "Mark as Favorite" button on the movie's page should return to its original state.
       3. The movie should no longer appear in the user's "Favorite Movies" list.
+  Example: Movie
+      | My Favorite     |
+      | Despicable Me 4 |
 
   Scenario 6: Remove a movie from favorites from movie's details page
       Given I am logged in to my TMDb account
@@ -88,8 +94,7 @@ Feature: Mark Movie as Favorite (Indonesian)
       3. The movie should no longer appear in the user's "Favorite Movies" list.
   Example: Movie
       | My Favorite     |
-      | It Ends With Us |
-      | Inside Out 2    |
+      | Despicable Me 4 |
 
   Scenario 7: Sort favorite movies list
       Given I am logged in to my TMDb account
