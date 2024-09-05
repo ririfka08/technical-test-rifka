@@ -11,3 +11,6 @@ User Story: As a logged-in user of TMDb, I want to mark movies as my favorites. 
 
 ## Tahap Pengujian
 Untuk pengujian pertama dilakukan menggunakan bahasa indonesia di website TMDb. Setelah itu, dilakukan pengujian kedua/ regression testing dengan mengubah bahasa indonesia menjadi bahasa inggris pada website TMDb untuk memastikan bahwa perubahan yang dilakukan pada website TMDb tidak berdampak negatif pada fitur-fitur yang sudah ada dan berfungsi dengan baik.
+
+## Hasil Pengujian
+Hasil dari pengujian ini menghasilkan 2 Test Scenario, 2 Documentation (termasuk test case), 1 Defect report, dan 1 Feedback.
