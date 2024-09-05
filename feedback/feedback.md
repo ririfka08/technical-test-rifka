@@ -8,4 +8,7 @@ Setelah melakukan pengujian terdapat beberapa hal yang perlu diperhatikan. Hal t
 
 # Evidence
 Evidence for ID 1
+![alt Evidence 1](https://github.com/ririfka08/technical-test-rifka/blob/main/images/evidence1.png)
+
 Evidence for ID 2
+![alt Evidence 2](https://github.com/ririfka08/technical-test-rifka/blob/main/images/evidence2.png)
