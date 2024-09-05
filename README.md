@@ -1,4 +1,4 @@
-# TMDb Mark as Favorite - Gherkin Test Cases Scenarios 
+# TMDb Mark as Favorite Manual Testing
 ## Feature: Mark Movie as Favorite 
 User Story: As a logged-in user of TMDb, I want to mark movies as my favorites. So   that I can easily access and manage my list of favorite movies
 
