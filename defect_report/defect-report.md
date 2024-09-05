@@ -1,6 +1,5 @@
 # Defect Report Fitur Mark as Favorite TMDb
 |Defect ID| DEF_REMOVE_001 |
-|---|---|
 |Problem| mmm |
 |Environment| mmm |
 |Data| mmm |
