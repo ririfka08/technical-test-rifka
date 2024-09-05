@@ -44,7 +44,6 @@ Feature: Mark Movie as Favorite (Indonesian)
 
   Scenario 4: Successfully view "My Favorite" page
       Given I am logged in to my TMDb account
-      And II have at least one movie in my "My Favorite" list
       When I click my profile picture
       And I click Lists
       And I click Overview
